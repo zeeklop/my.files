@@ -1,0 +1,23 @@
+return {
+	{
+		"ray-x/lsp_signature.nvim",
+		event = "LspAttach",
+		config = function()
+			local signature = require("lsp_signature")
+
+			signature.setup({
+				bind = true,
+				floating_window = true,
+				hint_enable = false,
+				handler_opts = { border = "rounded" },
+				toggle_key = "<C-k>",
+				-- extra_trigger_chars = { "(", "," },
+				always_trigger = false,
+			})
+
+			vim.keymap.set("i", "<C-k>", function()
+				signature.toggle_float_win()
+			end, { desc = "Toggle signature help" })
+		end,
+	},
+}

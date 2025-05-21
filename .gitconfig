@@ -1,0 +1,7 @@
+[user]
+	name = Ezequiel Lopez
+	email = ezequiel.lopez@graylog.com
+[log]
+	abbrevCommit = true
+[pull]
+	rebase = false

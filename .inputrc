@@ -1,0 +1,10 @@
+# Include default shortcuts
+$include /etc/inputrc
+
+# ignore case on TAB complition
+set completion-ignore-case on
+
+# arrow up search
+"\e[A":history-search-backward
+# arrow down search
+"\e[B":history-search-forward
