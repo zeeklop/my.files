@@ -8,6 +8,14 @@ return {
       vim.cmd.colorscheme("catppuccin")
     end,
   },
+  -- {
+  -- 	"atelierbram/Base2Tone-nvim",
+  -- 	name = "Base2Tone",
+  -- 	priority = 1000,
+  -- 	config = function()
+  -- 		vim.cmd.colorscheme("base2tone_desert_dark")
+  -- 	end,
+  -- },
   {
     "folke/noice.nvim",
     event = "VeryLazy",
